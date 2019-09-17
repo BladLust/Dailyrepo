@@ -6,6 +6,7 @@ timhelp(){
     echo $TMD_OPVSC;
     echo $TMD_LL;
     echo $TMD_NEWVSC;
+    echo $TMD_SETUPVSC
 }
 
 # A function that shows existing vscode projects and let you select one
@@ -17,3 +18,6 @@ TMD_NEWVSC='newvsc\t\tStart new vscode project with default C++ settings'
 
 alias ll="ls --color -la"
 TMD_LL="ll\t\tEquals to 'ls -la'"
+
+alias setupvsc='sh ~/GitRepo/VSCodeWorkspace/SetupProject/setupvscproject.sh'
+TMD_SETUPVSC="setupvsc\t\tGet the default .vscode config into current directory"
